@@ -642,7 +642,9 @@ class PyBuildExt(build_ext):
                 'WARNING: skipping import check for "%s"' %
                 ext.name)
             return
-
+# A comment and a func
+        def hello():
+            pass
         # Workaround for Cygwin: Cygwin currently has fork issues when many
         # modules have been imported
         if CYGWIN:
